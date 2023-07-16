@@ -29,13 +29,14 @@
 #include <BlynkSimpleShieldEsp8266.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+#include "passwords.h"
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "ahmedhashim";
-char pass[] = "8476152527";
+char ssid[] = WIFI_SSID;
+char pass[] = WIFI_PASSWORD;
 
 // Hardware Serial on Mega, Leonardo, Micro...
 //#define EspSerial Serial1
